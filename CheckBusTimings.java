@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class Test_BusTimings implements BusTimingsProvider {
+public class CheckBusTimings implements BusTimingsProvider {
     private ApiKeyProvider apiKeyProvider;
 
     public Test_BusTimings(ApiKeyProvider apiKeyProvider) {
