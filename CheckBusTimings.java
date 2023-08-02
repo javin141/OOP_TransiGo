@@ -13,7 +13,7 @@ import org.json.JSONObject;
 public class CheckBusTimings implements BusTimingsProvider {
     private ApiKeyProvider apiKeyProvider;
 
-    public Test_BusTimings(ApiKeyProvider apiKeyProvider) {
+    public CheckBusTimings(ApiKeyProvider apiKeyProvider) {
         this.apiKeyProvider = apiKeyProvider;
     }
 
