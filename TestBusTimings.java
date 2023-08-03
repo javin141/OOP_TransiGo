@@ -7,8 +7,9 @@ public class TestBusTimings {
     public static void main(String[] args) {
         // Set the API Key
         String apiKey = "x2KGyywxRlCvM6OIfM19UQ==";
-
-        Scanner scanner = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+        for (;;) {
         System.out.print("Enter the bus stop number: ");
         String busStopNumber = scanner.nextLine();
 
@@ -23,8 +24,8 @@ public class TestBusTimings {
                     LocalDateTime arrivalTime = timings.getArrivalTime()[i];
                     String arrivalMins = timings.getArrivalMins()[i];
 
-                    System.out.println("Service: " + serviceNo + "\tNext Arrival Time: " + arrivalTime.format(DateTimeFormatter.ofPattern("HH:mm"))
-                            + "\tArrival in " + arrivalMins);
+                    System.out.println("Service: " + serviceNo + "  Next Arrival Time: " + arrivalTime.format(DateTimeFormatter.ofPattern("HH:mm"))
+                            + "  Arrival in " + arrivalMins);
                 }
             } else {
                 System.out.println("Failed to fetch bus timings.");
@@ -32,12 +33,6 @@ public class TestBusTimings {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    	}
     }
 }
-
-
-
-
-
-
-
