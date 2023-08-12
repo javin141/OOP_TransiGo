@@ -13,8 +13,9 @@ import org.json.JSONObject;
 public class CheckBusTimings {
     private String apiKey;
 
-    public CheckBusTimings(String apiKey) {
-        this.apiKey = apiKey;
+    public CheckBusTimings() {
+    	APIKeyProvider apiKeyProvider = new API();
+    	this.apiKey = apiKeyProvider.getAPIKey();
     }
 
     public BusTimings getBusTimings(String busStopNumber) throws IOException {
