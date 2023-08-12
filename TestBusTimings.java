@@ -5,15 +5,13 @@ import java.util.Scanner;
 
 public class TestBusTimings {
     public static void main(String[] args) {
-        // Set the API Key
-        String apiKey = "x2KGyywxRlCvM6OIfM19UQ==";
         @SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
         for (;;) {
         System.out.print("Enter the bus stop number: ");
         String busStopNumber = scanner.nextLine();
 
-        CheckBusTimings timingsFetcher = new CheckBusTimings(apiKey);
+        CheckBusTimings timingsFetcher = new CheckBusTimings();
         try {
             BusTimings timings = timingsFetcher.getBusTimings(busStopNumber);
 
