@@ -18,7 +18,7 @@ public class HomepgController {
 	private Parent root;
 	
 
-	public void switchToMRTMAP(ActionEvent event) throws IOException {
+	public void switchToMapmrt(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("Mapmrt.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
@@ -26,8 +26,48 @@ public class HomepgController {
 		stage.show();
 	}
 	
-	public void switchToSample(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
+	public void switchToTravelchit(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("Travelchit.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
+	public void switchToReportfault(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("Reportfault.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
+	public void switchToTimingbus(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("Timingbus.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
+	public void switchToCalculatorfare(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("Calculatorfare.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
+	public void switchToPlannertrip(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("Plannertrip.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
+	public void switchToHomepg(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("Homepg.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
