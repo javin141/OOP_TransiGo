@@ -12,4 +12,17 @@
     <TextField fx:id="busStopNumberField" />
     <Button text="Get Bus Timings" onAction="#getBusTimings" />
     <Label fx:id="resultLabel" />
+    <Label fx:id="ServiceNo1" />
+    <Label fx:id="ArrivalTime1" />
+    <Label fx:id="ArrivalMins1" />
+    <Label fx:id="ServiceNo2" />
+    <Label fx:id="ArrivalTime2" />
+    <Label fx:id="ArrivalMins2" />
+    <Label fx:id="ServiceNo3" />
+    <Label fx:id="ArrivalTime3" />
+    <Label fx:id="ArrivalMins3" />
+    <Label fx:id="ServiceNo4" />
+    <Label fx:id="ArrivalTime4" />
+    <Label fx:id="ArrivalMins4" />
 </VBox>
+

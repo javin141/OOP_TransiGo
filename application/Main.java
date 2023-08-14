@@ -14,7 +14,7 @@ public class Main extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("BusTimings.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
-            stage.setTitle("Bus Timings App");
+            stage.setTitle("Bus Timings");
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
