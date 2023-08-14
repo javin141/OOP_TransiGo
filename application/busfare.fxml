@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.BusFareController"> <!-- Specify the controller -->
+    <VBox alignment="CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Label text="Bus Fare Calculator" />
+        <TextField fx:id="busNumberField" promptText="Bus Number" />
+        <TextField fx:id="startBusStopField" promptText="Start Bus Stop Code" />
+        <TextField fx:id="endBusStopField" promptText="End Bus Stop Code" />
+        <Button text="Calculate" onAction="#calculateFaresAndDistance" /> <!-- Specify the event handler method -->
+        <Label fx:id="adultFareLabel" />
+        <Label fx:id="studentFareLabel" />
+        <Label fx:id="seniorDisabledFareLabel" />
+        <Label fx:id="distanceLabel" />
+    </VBox>
+</AnchorPane>
+
+
