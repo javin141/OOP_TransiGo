@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BusFareController">
+   <ImageView fitHeight="700.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@picture/10.png" />
+      </image>
+   </ImageView>
+     <Label layoutX="179.0" layoutY="107.0" text="Bus Fare Calculator" />
+     <TextField fx:id="busNumberField" layoutX="42.0" layoutY="225.0" promptText="Bus Number" />
+     <TextField fx:id="startBusStopField" layoutX="262.0" layoutY="158.0" promptText="Start Bus Stop Code" />
+     <TextField fx:id="endBusStopField" layoutX="262.0" layoutY="225.0" promptText="End Bus Stop Code" />
+     <Button layoutX="215.0" layoutY="275.0" onAction="#calculateFaresAndDistance" text="Calculate" /> <!-- Specify the event handler method -->
+     <Label fx:id="adultFareLabel" layoutX="351.0" layoutY="359.0">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+     <Label fx:id="studentFareLabel" layoutX="351.0" layoutY="396.0">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+     <Label fx:id="seniorDisabledFareLabel" alignment="CENTER" layoutX="350.0" layoutY="434.0">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+     <Label fx:id="distanceLabel" layoutX="353.0" layoutY="567.0">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+   <Button layoutX="24.0" layoutY="38.0" mnemonicParsing="false" onAction="#switchToHomepg" opacity="0.0" text="Button" />
+</AnchorPane>

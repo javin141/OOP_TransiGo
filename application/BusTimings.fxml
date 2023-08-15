@@ -1,15 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/11.0.1"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
-    <Label text="Enter the bus stop number:" />
-    <TextField fx:id="busStopNumberField" />
-    <Button text="Get Bus Timings" onAction="#getBusTimings" />
-    <Label fx:id="resultLabel" />
-</VBox>
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@picture/03.jpg" />
+         </image>
+      </ImageView>
+       <Label fx:id="ArrivalMins3" layoutX="346.0" layoutY="485.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+       <TextField fx:id="busStopNumberField" layoutX="191.0" layoutY="169.0" />
+       <Button layoutX="89.0" layoutY="169.0" onAction="#getBusTimings" opacity="0.0" text="Get Bus Timings" />
+       <Label fx:id="resultLabel" layoutX="229.0" layoutY="215.0" />
+       <Label fx:id="ServiceNo1" layoutX="67.0" layoutY="274.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+       <Label fx:id="ArrivalTime1" layoutX="398.0" layoutY="315.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+       <Label fx:id="ArrivalMins1" layoutX="354.0" layoutY="279.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+       <Label fx:id="ServiceNo2" layoutX="67.0" layoutY="375.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+       <Label fx:id="ArrivalTime2" layoutX="401.0" layoutY="416.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+       <Label fx:id="ArrivalMins2" layoutX="354.0" layoutY="380.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+       <Label fx:id="ArrivalTime3" layoutX="400.0" layoutY="520.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+       <Label fx:id="ServiceNo4" layoutX="58.0" layoutY="591.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+       <Label fx:id="ArrivalTime4" layoutX="402.0" layoutY="636.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+       <Label fx:id="ArrivalMins4" layoutX="346.0" layoutY="601.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+       <Label fx:id="ServiceNo3" layoutX="67.0" layoutY="475.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="32.0" mnemonicParsing="false" onAction="#switchToHomepg" opacity="0.0" text="Button" />
+   </children>
+</AnchorPane>
